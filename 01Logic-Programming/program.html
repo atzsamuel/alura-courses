@@ -1,49 +1,27 @@
 <meta charset="UTF-8">
 
 <script>
-  var year = 2020;
-  document.write("The age of the user is:" + (year - 1995) + "years");
-  document.write("<br>")
-  document.write("<br>")
+  function breakLine() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
 
-  document.write("Juan is :" + (year - 2000) + "years");
-  document.write("<br>")
-  document.write("<br>")
+  function print(text) {
+    document.write(text);
+    breakLine();
+  }
+
+  print("<h1>Hello friends</h1>");
+
+  var year = 2025;
+
+  print("The age of the user is:" + (year - 1995) + "years");
+
+  print("Juan is :" + (year - 2000) + "years");
 
   year = 2030;
 
-  document.write("Luis is in:" + (year - 2005) + "years");
-  document.write("<br>")
-  document.write("<br>")
+  print("Luis is in:" + (year - 2005) + "years");
 
-  document.write("<br>")
-  document.write("<br>")
-  document.write("<br>")
-  document.write("<br>")
-
-  year = 2020;
-  document.write("Jimena is in:" + (year - 2010) + " years");
-  document.write("<br>")
-  document.write("<br>")
-
-  document.write("Pahola is in:" + (year - 1995) + " years");
-  document.write("<br>")
-  document.write("<br>")
-
-  document.write("Laura is in:" + (year - 2005) + " years");
-  document.write("<br>")
-  document.write("<br>")
-
-  var jimenaAge = 10;
-  var paholaAge = 25;
-  var lauraAge = 15;
-
-  var name1 = "Jimena";
-  var name2 = "Pahola";
-  var name3 = "Laura";
-
-  average = (jimenaAge + paholaAge + lauraAge) / 3;
-  document.write("The average of woman ages: " + name1 + " ," + name2 + " and " + name3 + " is " + Math.round(average));
-  document.write("<br>")
-  document.write("<br>")
 </script>
