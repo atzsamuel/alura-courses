@@ -16,7 +16,16 @@
   var victory = parseInt(prompt("Enter the number of victories"));
   var draw = parseInt(prompt("Enter the number of draws"));
 
-  var points = (victory * 3) + draw;
-  print("The total points of team is: " + points);
+  var totalPoints = (victory * 3) + draw;
+  print("The total points of team is: " + totalPoints);
 
+  if (totalPoints > 28) {
+    print("The team is good");
+  }
+  if (totalPoints < 28) {
+    print("The team isn't good");
+  }
+  if (totalPoints == 28) {
+    print("The team is equal");
+  } 
 </script>
