@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<h1>Program for calculating points of soccer team</h1>
+
+<script>
+  function breakLine() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function print(text) {
+    document.write(text);
+    breakLine();
+  }
+
+  var victory = parseInt(prompt("Enter the number of victories"));
+  var draw = parseInt(prompt("Enter the number of draws"));
+
+  var points = (victory * 3) + draw;
+  print("The total points of team is: " + points);
+
+</script>
