@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<h1>Game Adivinating</h1>
+
+<script>
+  function breakLine() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function print(text) {
+    document.write(text);
+    breakLine();
+  }
+
+  function sorting(n) {
+    return Math.round(Math.random() * n);
+  }
+
+  var numberThinking = sorting(10); // 0-10
+  var numberReal = parseInt(prompt("Input one number betweeen 0-10"));
+
+  if (numberReal == numberThinking) {
+    print("You are right!");
+  } else {
+    if (numberReal > numberThinking) {
+      print("You are wrong! the number was: " + numberThinking + " and you inputed: " + numberReal + " and the number was smaller");
+    } else {
+      print("You are wrong! the number was: " + numberThinking + " and you inputed: " + numberReal + " and the number was bigger");
+    }
+  }
+
+</script>
