@@ -13,13 +13,10 @@
     breakLine();
   }
 
-  function calculateIMC(weight, height, name) {
-    var imc = weight / (height * height);
-    print(name + "'s IMC is: " + imc);
+  function calculateIMC(weight, height) {
+    return weight / (height * height);
   }
 
-  calculateIMC(71, 1.72, "Samuel");
-  calculateIMC(75, 1.73, "Felipe");
-
+  print("The average IMC between Samuel and Felipe is: " + (calculateIMC(70, 1.75) + calculateIMC(80, 1.75)) / 2);
 
 </script>
