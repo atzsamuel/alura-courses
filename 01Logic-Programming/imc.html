@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<h1>Program for calculating IMC</h1>
+
+<script>
+  function breakLine() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function print(text) {
+    document.write(text);
+    breakLine();
+  }
+
+  function calculateIMC(weight, height, name) {
+    var imc = weight / (height * height);
+    print(name + "'s IMC is: " + imc);
+  }
+
+  calculateIMC(71, 1.72, "Samuel");
+  calculateIMC(75, 1.73, "Felipe");
+
+
+</script>
