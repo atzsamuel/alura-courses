@@ -17,6 +17,10 @@
     return weight / (height * height);
   }
 
-  print("The average IMC between Samuel and Felipe is: " + (calculateIMC(70, 1.75) + calculateIMC(80, 1.75)) / 2);
+  //print("The average IMC between Samuel and Felipe is: " + (calculateIMC(70, 1.75) + calculateIMC(80, 1.75)) / 2);
+  name = prompt("What is your name?");
+  weight = prompt(name + " What is your weight?");
+  height = prompt(name + " What is your height?");
+  print("The IMC of " + name + " is: " + calculateIMC(weight, height));
 
 </script>
