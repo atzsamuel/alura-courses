@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<h1>Game Adivinating</h1>
+
+<script>
+  function breakLine() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function print(text) {
+    document.write(text);
+    breakLine();
+  }
+
+  var numberThinking = Math.round(Math.random() * 10);
+  var numberReal = parseInt(prompt("Input one number betweeen 0-10"));
+
+  if (numberReal == numberThinking) {
+    print("You are right!");
+  } else {
+    print("You are wrong! the number was: " + numberThinking);
+  }
+
+</script>
