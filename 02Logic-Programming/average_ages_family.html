@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<h1>Average Ages Family</h1>
+
+<script>
+  function breakLine() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function print(text) {
+    document.write(text);
+    breakLine();
+  }
+
+  var numberMembers = prompt("How many members are in your family?");
+  var counter = 1;
+  var totalAges = 0;
+
+  while (counter < numberMembers) {
+    var age = parseInt(prompt("How old is your family member?"));
+    totalAges += parseInt(age);
+    counter++;
+  }
+
+  var averageAge = totalAges / numberMembers;
+  print("The average age of your family is " + averageAge + " years old.");
+  print("End of program.");
+
+</script>
