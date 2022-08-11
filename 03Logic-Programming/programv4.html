@@ -18,11 +18,19 @@
   }
 
   var x = 0;
+  var direction = 1;
 
   function refreshScreen() {
     cleanScreen();
+
+    if (x > 600) {
+      direction = -1;
+    } else if (x < 0) {
+      direction = 1;
+    }
+
     drawCircunference(x, 20, 10);
-    x++;
+    x += direction;
   }
 
   setInterval(refreshScreen, 5);
