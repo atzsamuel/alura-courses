@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<h1>Game Adivinating</h1>
+
+<script>
+  function breakLine() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function print(text) {
+    document.write(text);
+    breakLine();
+  }
+
+  for (var lines = 1; lines <= 3; lines++) {
+    for (var columns = 1; columns <= 10; columns++) {
+      document.write("<span style='color:red;'>*</span>");
+    }
+    breakLine();
+  }
+
+  breakLine();
+  breakLine();
+
+  print("End of program.");
+
+</script>
