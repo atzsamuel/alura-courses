@@ -3,12 +3,12 @@ p {
   background: #cccccc;
 }
 
-h1{
+.titulo-centralizado{
   text-align: center;
 }
 
-body{
-  
+.titulo-principal{
+  padding-left: 30px;
 }
 
 #banner{
@@ -31,10 +31,6 @@ em strong{
 .diferenciales{
   background:#ffffff;
   padding: 30px;
-}
-
-h2{
-  text-align: center;
 }
 
 .items{
