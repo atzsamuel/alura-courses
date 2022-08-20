@@ -90,3 +90,9 @@ footer{
   background: url(imagenes/bg.jpg);
   padding: 40px;
 }
+
+.copyright{
+  color:white;
+  font-size: 13px;
+  margin:20px;
+}
