@@ -28,16 +28,16 @@
   <main>
     <form>
       <label for="nombreapellido">Nombre y Apellido</label>
-      <input type="text" id="nombreapellido" class="input-padron">
+      <input type="text" id="nombreapellido" class="input-padron" required>
 
       <label for="correoelectronico">Correo Electronico</label>
-      <input type="text" id="correoelectronico" class="input-padron">
+      <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
 
       <label for="telefono">Telefono</label>
-      <input type="text" id="telefono" class="input-padron">
+      <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXXXXX">
 
       <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
+      <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
 
       <div>
         <p class="test" id="test">Como le gustaria que lo contactemos?</p>
@@ -45,7 +45,7 @@
 
         <label for="radio-telefono"><input name="contacto" type="radio" id="radio-telefono" value="telefono">Telefono</label>
 
-        <label for="radio-whatsapp"><input name="contacto" type="radio" id="radio-whatsapp" value="whatsapp">Whatsapp</label>
+        <label for="radio-whatsapp"><input name="contacto" type="radio" id="radio-whatsapp" value="whatsapp" checked>Whatsapp</label>
       </div>
 
       <div>
@@ -58,7 +58,7 @@
       </div>
 
       <label class="checkbox">
-        <input type="checkbox">Le gustaria recibir novedades de la barber?
+        <input type="checkbox" checked>Le gustaria recibir novedades de la barber?
       </label>
       <input name="contacto" type="submit" value="Enviar formulario">
     </form>
