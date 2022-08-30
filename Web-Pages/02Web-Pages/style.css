@@ -160,6 +160,22 @@ td,th{
   width: 100%;
 }
 
+main > p{
+  background: red;
+}
+
+img + p{
+  background-color: yellow;
+}
+
+img ~ p{
+  background-color: green;
+}
+
+.principal p:not(#mision){
+  background: orange;
+}
+
 .principal{
   padding: 3em 0;
   background: #fefefe;
