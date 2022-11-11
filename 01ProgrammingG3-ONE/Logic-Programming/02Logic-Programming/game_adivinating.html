@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<h1>Game Adivinating</h1>
+
+<script>
+  function breakLine() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function print(text) {
+    document.write(text);
+    breakLine();
+  }
+
+  var numberThinking = Math.round(Math.random() * 10);
+  var attempts = 3;
+  var counter = 1;
+
+  while (counter <= attempts) {
+    var number = parseInt(prompt("Guess the number between 0 and 10"));
+    if (numberThinking == number) {
+      alert("You win! attempt : " + "\n" + counter + "The number was: " + numberThinking);
+      break;
+    } else {
+      print("You lose!");
+    }
+    counter++;
+  }
+
+  if (numberThinking == number) {
+    print("You win!" + "\n" + attempts + "The number was: " + numberThinking);
+  } else {
+    print("You lose!, the number was: " + numberThinking);
+  }
+
+</script>

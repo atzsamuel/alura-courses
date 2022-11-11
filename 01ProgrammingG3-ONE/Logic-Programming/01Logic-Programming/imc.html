@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<h1>Program for calculating IMC</h1>
+
+<script>
+  function breakLine() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function print(text) {
+    document.write(text);
+    breakLine();
+  }
+
+  function calculateIMC(weight, height) {
+    return weight / (height * height);
+  }
+
+  //print("The average IMC between Samuel and Felipe is: " + (calculateIMC(70, 1.75) + calculateIMC(80, 1.75)) / 2);
+  name = prompt("What is your name?");
+  weight = prompt(name + " What is your weight?");
+  height = prompt(name + " What is your height?");
+  print("The IMC of " + name + " is: " + calculateIMC(weight, height));
+
+</script>
