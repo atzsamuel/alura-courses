@@ -14,3 +14,25 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
         align-items: center;
         flex-direction: column;
     }
+
+### This style property allow the same size with each item
+    .flexItem{
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+### If you need to reduce four times the first item use the following style
+
+    .firstItem{
+        flex-shrink:4;
+    }
+
+## Reading lesson
+https://www.aluracursos.com/blog/flexbox-css-guia-completo-elementos-y-ejemplos
+
+## Keep learning flexBox 
+https://flexboxfroggy.com/
+
+http://www.flexboxdefense.com/
+
+By [SamuelAtz](https://twitter.com/atz_samuel)
